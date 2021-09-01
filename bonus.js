@@ -16,7 +16,7 @@ searchBtn.addEventListener('click', function () {
         error.classList.add('d-none');
 
     }
-    spinner.classList.add("d-none");
+    // spinner.classList.add("d-none");
     const url = `https://restcountries.eu/rest/v2/name/${searchValue}`
     spinner.classList.remove("d-none");
     fetch(url)
@@ -90,7 +90,7 @@ function showDetail(alpha3Code) {
         
        
         `
-
+            window.scrollTo(0, 50);
 
         })
 
